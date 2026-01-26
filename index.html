@@ -1,0 +1,1294 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/png" href="assets/logo.png" />
+
+    <meta charset="UTF-8" />
+
+    <!-- Font Awesome icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- Main site stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frisco, Texas</title>
+  </head>
+  <body>
+    <!-- Page Loading Progress Bar -->
+    <div id="progressBar" class="progress-bar"></div>
+
+    <!-- Skip to main content -->
+    <a href="#main" class="skip-to-main">Skip to main content</a>
+
+    <!-- =========================================================
+       HERO HEADER WITH BACKGROUND VIDEO
+       ======================================================= -->
+    <section class="header">
+      <!-- Decorative background video (muted, looping) -->
+      <video
+        id="bg-video"
+        autoplay
+        muted
+        loop
+        aria-label="Background footage of Frisco city landmarks used for decoration behind the heading."
+      >
+        <source src="assets/vid1.mp4" type="video/mp4" />
+      </video>
+
+      <!-- =====================================================
+         MAIN NAVIGATION BAR
+         =================================================== -->
+      <nav aria-label="Primary site navigation">
+        <!-- Theme toggle button (light / dark mode) -->
+        <button id="theme-toggle" aria-label="Toggle light/dark mode"></button>
+
+        <!-- Site logo linking back to home -->
+        <a href="index.html">
+          <img src="assets/logo.png" class="logo" alt="City logo of Frisco" />
+        </a>
+
+        <!-- Desktop & mobile navigation links -->
+        <div class="nav-links" id="navLinks">
+          <!-- Close icon (shown in mobile nav) -->
+          <div class="cross-icon" onclick="hideMenu()"></div>
+
+          <ul>
+            <li><a href="index.html" class="nav-active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="blogs.html">Blogs</a></li>
+            <li><a href="highlights.html">Highlights</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="references.html">References</a></li>
+          </ul>
+        </div>
+
+        <!-- Hamburger icon (mobile menu trigger) -->
+        <div class="menu-icon-unicode" onclick="showMenu()">&#9776;</div>
+      </nav>
+
+      <!-- Hero text content over video -->
+      <div class="text-box">
+        <h1>Frisco Community Hub</h1>
+        <p>
+          Your guide to local services, programs, and community support for
+          Frisco residents.
+        </p>
+        <p class="mission-statement">
+          <strong>Mission:</strong> Connect Frisco residents with essential
+          community resources that enhance quality of life and strengthen
+          neighborhoods.
+        </p>
+        <a href="resources.html" class="hero-btn">Explore Resources</a>
+      </div>
+    </section>
+
+    <!-- =========================================================
+       MAIN CONTENT
+       ======================================================= -->
+    <main id="main">
+      <section class="newsinfo">
+        <h2 class="news">News & Information</h2>
+
+        <div class="row">
+          <!-- News item 1 -->
+          <div class="news-col reveal reveal-bottom">
+            <h3>City of Frisco Holiday Hours: Thanksgiving 2025</h3>
+            <p>
+              (November 20, 2025) In observance of the Thanksgiving holiday, the
+              City of Frisco administrative offices will be closed on Thursday,
+              November 27, and Friday, November 28
+            </p>
+          </div>
+
+          <!-- News item 2 -->
+          <div class="news-col reveal reveal-bottom">
+            <h3>
+              Frisco Square Blvd. closed east of Simpson Plaza Tuesday
+              afternoon, Nov. 25
+            </h3>
+            <p>
+              (November 24, 2025) A short section of Frisco Square Blvd. will be
+              closed east of Simpson Plaza Tuesday afternoon, November 25, for a
+              special event.
+            </p>
+          </div>
+
+          <!-- News item 3 -->
+          <div class="news-col reveal reveal-bottom">
+            <h3>
+              CodeRED Emergency Alert Platform Decommissioned; Residents Advised
+              to Change Password
+            </h3>
+            <p>
+              (November 24, 2025) The City of Frisco has learned CodeRED, the
+              third-party platform used for emergency alerts, was impacted by a
+              cybersecurity incident.
+            </p>
+          </div>
+        </div>
+
+        <!-- Button linking to the full news/blogs page -->
+        <div class="articles">
+          <a href="blogs.html" class="btn">View The News Articles</a>
+        </div>
+      </section>
+
+      <!-- =========================================================
+       TOUR OF FRISCO SECTION
+       ======================================================= -->
+      <section class="tour">
+        <h2 class="news">Community Events</h2>
+        <p>Below are some of the truly remarkable events</p>
+
+        <div class="row">
+          <!-- Event card: Fire Department -->
+          <div class="event-col reveal reveal-bottom">
+            <img src="assets/fire.png" alt="Fire-Department" />
+            <div class="layer">
+              <h3>Fire Dept.</h3>
+            </div>
+            <p>
+              Frisco Fire Station 2 reopened after extensive renovations with
+              enhanced facilities. These improvements strengthen emergency
+              response infrastructure and public safety capabilities.
+            </p>
+          </div>
+
+          <!-- Event card: Community Parade -->
+          <div class="event-col reveal reveal-bottom" id="second">
+            <img src="assets/spirit.png" alt="Park-Parade-Spirit" />
+            <div class="layer">
+              <h3>Community Parade</h3>
+            </div>
+            <p>
+              Frisco residents gathered at Kaleidoscope Park for the Community
+              Parade to celebrate community connections and civic engagement in
+              the neighborhood.
+            </p>
+          </div>
+
+          <!-- Event card: Town Hall Meeting -->
+          <div class="event-col reveal reveal-bottom">
+            <img src="assets/meeting.png" alt="Town-Hall-Meeting" />
+            <div class="layer">
+              <h3>Town Hall Meeting</h3>
+            </div>
+            <p>
+              October 15 Town Hall meeting replays for updates on the Rail
+              District and Frisco Animal Facility plans in the Town Hall.
+            </p>
+          </div>
+        </div>
+
+        <!-- Button linking to highlights page -->
+        <a href="highlights.html" class="btn1">Highlights</a>
+      </section>
+
+      <!-- =========================================================
+       UPCOMING EVENTS CALENDAR
+       ======================================================= -->
+      <section class="events-calendar-section">
+        <h2>Upcoming Events Calendar</h2>
+        <p>
+          Stay updated with Frisco's upcoming events, festivals, and community
+          activities
+        </p>
+
+        <div class="calendar-container">
+          <div class="calendar-header">
+            <button
+              class="calendar-nav"
+              onclick="previousMonth()"
+              aria-label="Previous month"
+              aria-controls="calendarBody"
+            >
+              &lt;
+            </button>
+            <h3 id="currentMonth">January 2026</h3>
+            <button
+              class="calendar-nav"
+              onclick="nextMonth()"
+              aria-label="Next month"
+              aria-controls="calendarBody"
+            >
+              &gt;
+            </button>
+          </div>
+
+          <table
+            class="calendar-table"
+            role="grid"
+            aria-label="Events calendar"
+          >
+            <thead>
+              <tr>
+                <th>Sun</th>
+                <th>Mon</th>
+                <th>Tue</th>
+                <th>Wed</th>
+                <th>Thu</th>
+                <th>Fri</th>
+                <th>Sat</th>
+              </tr>
+            </thead>
+            <tbody id="calendarBody">
+              <!-- Calendar dates will be generated by JavaScript -->
+            </tbody>
+          </table>
+          <!-- Popover container for anchored date cards -->
+          <div
+            id="calendarPopover"
+            class="calendar-popover"
+            aria-hidden="true"
+          ></div>
+        </div>
+
+        <div class="events-list">
+          <h3>Featured Events - <span id="eventsMonth">January 2026</span></h3>
+          <div
+            id="eventsList"
+            class="events-container"
+            role="region"
+            aria-live="polite"
+            aria-label="Featured events for the selected month"
+          >
+            <!-- Events will be dynamically populated based on selected month -->
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- =========================================================
+       FOOTER
+       ======================================================= -->
+    <section class="footer">
+      <footer>
+        <!-- Footer logo -->
+        <div class="logo">
+          <img src="assets/logo.png" alt="Frisco-City-Logo" />
+        </div>
+
+        <!-- Contact details -->
+        <h4>Contact Us</h4>
+        <div class="text-container">
+          <p>George A. Purefoy Municipal Center</p>
+          <p>6101 Frisco Square Boulevard</p>
+          <p>Frisco, Texas 75034</p>
+          <p>Phone: 972-292-5000</p>
+        </div>
+
+        <h4 class="departments">Departments</h4>
+        <div class="text-container2 footer-dept-links">
+          <p>
+            <a
+              href="https://www.friscotexas.gov/506/City-Manager"
+              target="_blank"
+              >City Manager’s Office</a
+            >
+          </p>
+          <p>
+            <a href="https://www.friscoedc.com" target="_blank"
+              >Economic Development</a
+            >
+          </p>
+          <p>
+            <a href="https://www.friscotexas.gov/154/Fire" target="_blank"
+              >Frisco Fire</a
+            >
+          </p>
+          <p>
+            <a href="https://www.friscotexas.gov/100/Police" target="_blank"
+              >Frisco Police</a
+            >
+          </p>
+          <p>
+            <a
+              href="https://www.friscotexas.gov/167/Municipal-Court"
+              target="_blank"
+              >Municipal Court</a
+            >
+          </p>
+          <p>
+            <a href="https://www.playfrisco.org" target="_blank">Play Frisco</a>
+          </p>
+          <p>
+            <a href="https://www.visitfrisco.com" target="_blank"
+              >Visit Frisco</a
+            >
+          </p>
+        </div>
+
+        <!-- Social media links -->
+        <div class="footer-column follow-column">
+          <h4 class="follow">Follow Us</h4>
+          <div class="text-container3">
+            <a
+              href="https://www.facebook.com/CityOfFriscoTX"
+              class="fa fa-facebook"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="City of Frisco Facebook"
+            ></a>
+            <a
+              href="https://www.instagram.com/cityoffriscotx/"
+              class="fa fa-instagram"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="City of Frisco Instagram"
+            ></a>
+            <a
+              href="https://www.youtube.com/user/cityoffriscotx"
+              class="fa fa-youtube"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="City of Frisco YouTube"
+            ></a>
+            <a
+              href="https://www.linkedin.com/company/city-of-frisco/"
+              class="fa fa-linkedin"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="City of Frisco LinkedIn"
+            ></a>
+          </div>
+        </div>
+      </footer>
+    </section>
+
+    <!-- =======================================================
+       JAVASCRIPT: MOBILE NAVIGATION + THEME TOGGLE
+       ===================================================== -->
+    <script>
+      // Open the slide-in mobile navigation
+      function showMenu() {
+        const navLinks = document.getElementById("navLinks");
+        navLinks.style.right = "0";
+      }
+
+      // Close the slide-in mobile navigation
+      function hideMenu() {
+        const navLinks = document.getElementById("navLinks");
+        navLinks.style.right = "-200px";
+      }
+      // Lightweight storage abstraction to replace localStorage (use cookies)
+      // This avoids using localStorage while providing simple get/set semantics
+      const appStorage = {
+        getItem(key) {
+          const re = new RegExp(
+            "(?:^|; )" +
+              key.replace(/[.*+?^${}()|[\\]\\]/g, "\\$&") +
+              "=([^;]*)",
+          );
+          const match = document.cookie.match(re);
+          return match ? decodeURIComponent(match[1]) : null;
+        },
+        setItem(key, value, days = 365) {
+          const d = new Date();
+          d.setTime(d.getTime() + days * 24 * 60 * 60 * 1000);
+          document.cookie =
+            key +
+            "=" +
+            encodeURIComponent(String(value)) +
+            ";path=/;expires=" +
+            d.toUTCString();
+        },
+        removeItem(key) {
+          document.cookie =
+            key + "=;path=/;expires=Thu, 01 Jan 1970 00:00:00 GMT";
+        },
+      };
+
+      const toggleBtn = document.getElementById("theme-toggle");
+      const root = document.documentElement;
+
+      // Load saved theme (using appStorage instead of localStorage)
+      const savedTheme = appStorage.getItem("theme");
+
+      // If the saved theme is "light", enable light mode
+      if (savedTheme === "light") {
+        root.classList.add("light-theme");
+        toggleBtn.textContent = "Toggle Dark Mode On";
+      } else {
+        // Otherwise, force dark mode and save it as default
+        root.classList.remove("light-theme");
+        appStorage.setItem("theme", "dark");
+        toggleBtn.textContent = "Toggle Light Mode On";
+      }
+
+      // Theme toggle logic
+      toggleBtn.addEventListener("click", () => {
+        const isLight = root.classList.toggle("light-theme");
+        appStorage.setItem("theme", isLight ? "light" : "dark");
+        toggleBtn.textContent = isLight
+          ? "Toggle Dark Mode On"
+          : "Toggle Light Mode On";
+      });
+
+      // =========================================================
+      // PAGE LOADING PROGRESS BAR
+      // =========================================================
+      const progressBar = document.getElementById("progressBar");
+
+      // Start progress bar when page starts loading
+      window.addEventListener("beforeunload", () => {
+        progressBar.classList.add("active");
+        progressBar.style.width = "30%";
+      });
+
+      // Complete progress bar when page finishes loading
+      window.addEventListener("load", () => {
+        progressBar.style.width = "100%";
+        progressBar.classList.remove("active");
+        progressBar.classList.add("complete");
+
+        // Fade out progress bar after completion
+        setTimeout(() => {
+          progressBar.classList.add("fade");
+        }, 1500);
+      });
+
+      // Initialize progress bar on page load
+      // Consolidated page init: progress bar, calendar, observers, back-to-top
+      function initPage() {
+        try {
+          // Progress bar initial state
+          try {
+            progressBar.style.width = "60%";
+            progressBar.classList.add("active");
+          } catch (e) {}
+
+          // Initialize calendar
+          try {
+            generateCalendar();
+          } catch (e) {}
+
+          // Intersection observer for reveal animations
+          try {
+            const observerOptions = {
+              root: null,
+              threshold: 0.05,
+              rootMargin: "0px 0px -20px 0px",
+            };
+            const observer = new IntersectionObserver((entries) => {
+              entries.forEach((entry) => {
+                if (entry.isIntersecting) entry.target.classList.add("active");
+              });
+            }, observerOptions);
+            document
+              .querySelectorAll(".reveal")
+              .forEach((el) => observer.observe(el));
+          } catch (e) {}
+
+          // Back-to-top button (if present)
+          try {
+            const btn = document.getElementById("backToTop");
+            if (btn) {
+              const showAt = 240;
+              btn.addEventListener("click", () =>
+                window.scrollTo({ top: 0, behavior: "smooth" }),
+              );
+              window.addEventListener("scroll", () => {
+                if (window.scrollY > showAt) btn.classList.add("visible");
+                else btn.classList.remove("visible");
+              });
+            }
+          } catch (e) {}
+        } catch (e) {
+          console.error("initPage error", e);
+        }
+      }
+
+      document.addEventListener("DOMContentLoaded", initPage);
+
+      // Handle link clicks to show progress
+      document.addEventListener("click", (e) => {
+        const link = e.target.closest("a");
+        if (link && link.href && !link.target && !link.href.startsWith("#")) {
+          progressBar.style.width = "30%";
+          progressBar.classList.add("active");
+          progressBar.classList.remove("complete", "fade");
+        }
+      });
+
+      // =========================================================
+      // EVENTS CALENDAR FUNCTIONALITY
+      // =========================================================
+      let currentDate = new Date(2026, 0, 1);
+
+      // Ensure currentDate stays within Jan 2026 - Dec 2026
+      // Limited to 2026 for competition demonstration purposes
+      function clampCurrentDateTo2026() {
+        if (!currentDate || !(currentDate instanceof Date))
+          currentDate = new Date(2026, 0, 1);
+        const y = currentDate.getFullYear();
+        let m = currentDate.getMonth();
+        if (y < 2026) {
+          currentDate.setFullYear(2026);
+          currentDate.setMonth(0);
+          return;
+        }
+        if (y > 2026) {
+          currentDate.setFullYear(2026);
+          currentDate.setMonth(11);
+          return;
+        }
+        if (m < 0) currentDate.setMonth(0);
+        if (m > 11) currentDate.setMonth(11);
+      }
+
+      // Comprehensive events database for 2026
+      // Months include multiple celebrations where appropriate.
+      const eventsDatabase = {
+        0: [
+          // January
+          {
+            date: 1,
+            title: "New Year City Events Begin",
+            desc: "Start of 2026 community celebrations and activities",
+          },
+          {
+            date: 12,
+            title: "MLK Jr. Community Program",
+            desc: "Commemorative events and volunteer opportunities",
+          },
+          {
+            date: 15,
+            title: "Winter Recreation Programs",
+            desc: "Indoor sports and fitness classes available at Recreation Center",
+          },
+          {
+            date: 28,
+            title: "City Council Meeting",
+            desc: "Regular monthly city council meeting at the Municipal Center",
+          },
+        ],
+        1: [
+          // February
+          {
+            date: 6,
+            title: "Frisco Arts Festival",
+            desc: "Local artists showcase and cultural performances",
+          },
+          {
+            date: 14,
+            title: "Valentine's Day Festival",
+            desc: "Community celebration with activities for all ages at Kaleidoscope Park",
+          },
+          {
+            date: 20,
+            title: "Black History Month Program",
+            desc: "Community programming and exhibit at local venues",
+          },
+          {
+            date: 28,
+            title: "Frisco Spring Festival",
+            desc: "Annual spring celebration featuring local vendors, food, and entertainment",
+          },
+        ],
+        2: [
+          // March
+          {
+            date: 7,
+            title: "St. Patrick's Day Parade",
+            desc: "Community parade and celebration through downtown Frisco",
+          },
+          {
+            date: 14,
+            title: "Youth Sports Opening Day",
+            desc: "Season kickoff for youth leagues and activities",
+          },
+          {
+            date: 15,
+            title: "Community Cleanup Day",
+            desc: "Join us for a day of community service and beautification efforts",
+          },
+          {
+            date: 25,
+            title: "Spring Garden Workshop",
+            desc: "Learn tips and tricks for spring gardening at the Frisco Recreation Center",
+          },
+        ],
+        3: [
+          // April
+          {
+            date: 5,
+            title: "Easter Celebration",
+            desc: "Family-friendly Easter egg hunt and festivities",
+          },
+          {
+            date: 10,
+            title: "Neighborhood Safety Day",
+            desc: "Public safety resources and demonstrations",
+          },
+          {
+            date: 18,
+            title: "Earth Day Celebration",
+            desc: "Environmental awareness and sustainability activities",
+          },
+          {
+            date: 25,
+            title: "Frisco Spring Market",
+            desc: "Farmers market opening with local vendors and produce",
+          },
+        ],
+        4: [
+          // May
+          {
+            date: 3,
+            title: "Cinco de Mayo Festival",
+            desc: "Cultural celebration with music, food, and dancing",
+          },
+          {
+            date: 9,
+            title: "Mother's Day Community Brunch",
+            desc: "Family events and community recognition",
+          },
+          {
+            date: 17,
+            title: "Memorial Day Parade",
+            desc: "Community honors and remembrance celebration",
+          },
+          {
+            date: 31,
+            title: "Summer Programs Kickoff",
+            desc: "Launch of summer recreation and educational programs",
+          },
+        ],
+        5: [
+          // June
+          {
+            date: 6,
+            title: "Summer Youth Camp Registration",
+            desc: "Open registration and orientation for summer youth programs",
+          },
+          {
+            date: 15,
+            title: "Pride Festival",
+            desc: "Community celebration and inclusion event",
+          },
+          {
+            date: 21,
+            title: "Summer Solstice Concert",
+            desc: "Outdoor concert series featuring local and regional artists",
+          },
+          {
+            date: 28,
+            title: "Youth Leadership Summit",
+            desc: "Programs for young leaders in the community",
+          },
+        ],
+        6: [
+          // July
+          {
+            date: 4,
+            title: "Independence Day Celebration",
+            desc: "Fireworks, carnival games, and family activities",
+          },
+          {
+            date: 11,
+            title: "Summer Concert Series",
+            desc: "Live music performances at local parks",
+          },
+          {
+            date: 18,
+            title: "Community Sports Day",
+            desc: "Family sports competitions and recreational activities",
+          },
+          {
+            date: 26,
+            title: "Neighborhood Block Party Week",
+            desc: "Multiple neighborhood gatherings and community socials",
+          },
+        ],
+        7: [
+          // August
+          {
+            date: 1,
+            title: "Back to School Resource Fair",
+            desc: "Resources and information for students and parents",
+          },
+          {
+            date: 8,
+            title: "Back to School Fair",
+            desc: "School supplies and community resources event",
+          },
+          {
+            date: 15,
+            title: "Health and Wellness Expo",
+            desc: "Free health screenings and wellness information",
+          },
+          {
+            date: 30,
+            title: "Labor Day Celebration",
+            desc: "Community gathering and barbecue",
+          },
+        ],
+        8: [
+          // September
+          {
+            date: 7,
+            title: "Labor Day Observed",
+            desc: "City offices closed for holiday",
+          },
+          {
+            date: 12,
+            title: "Community Arts Showcase",
+            desc: "Local artists and youth performances",
+          },
+          {
+            date: 20,
+            title: "Fall Festival",
+            desc: "Harvest-themed celebration with activities and food",
+          },
+          {
+            date: 28,
+            title: "Oktoberfest Celebration",
+            desc: "German-inspired food, music, and cultural event",
+          },
+        ],
+        9: [
+          // October
+          {
+            date: 3,
+            title: "Community Health Fair",
+            desc: "Free health screenings and fitness demonstrations",
+          },
+          {
+            date: 10,
+            title: "Neighborhood Pumpkin Patch Events",
+            desc: "Family activities and seasonal events across parks",
+          },
+          {
+            date: 24,
+            title: "Halloween Festival",
+            desc: "Trick-or-treating and costume contests for all ages",
+          },
+          {
+            date: 31,
+            title: "Halloween Celebration",
+            desc: "Safe community spaces for Halloween festivities",
+          },
+        ],
+        10: [
+          // November
+          {
+            date: 1,
+            title: "Autumn Market",
+            desc: "Fall farmers market and craft vendors",
+          },
+          {
+            date: 11,
+            title: "Veterans Day Observance",
+            desc: "Community honors and ceremonies",
+          },
+          {
+            date: 15,
+            title: "Holiday Lights Festival Begins",
+            desc: "Start of seasonal holiday decorations and celebrations",
+          },
+          {
+            date: 27,
+            title: "Thanksgiving Holiday",
+            desc: "City offices closed for Thanksgiving",
+          },
+        ],
+        11: [
+          // December
+          {
+            date: 1,
+            title: "Holiday Tree Lighting",
+            desc: "Community tree lighting ceremony and celebration",
+          },
+          {
+            date: 12,
+            title: "Holiday Market Weekend",
+            desc: "Festive shopping with local vendors and artisans",
+          },
+          {
+            date: 18,
+            title: "Community Caroling & Events",
+            desc: "Neighborhood caroling and community gatherings",
+          },
+          {
+            date: 25,
+            title: "Christmas Day",
+            desc: "City offices closed for Christmas",
+          },
+        ],
+      };
+
+      function displayEventsForMonth(year, month) {
+        const monthNames = [
+          "January",
+          "February",
+          "March",
+          "April",
+          "May",
+          "June",
+          "July",
+          "August",
+          "September",
+          "October",
+          "November",
+          "December",
+        ];
+
+        // Update month display in events list
+        document.getElementById("eventsMonth").textContent =
+          `${monthNames[month]} ${year}`;
+
+        // Get events for this month
+        const events = eventsDatabase[month] || [];
+        const eventsList = document.getElementById("eventsList");
+
+        if (events.length === 0) {
+          eventsList.innerHTML =
+            '<p class="no-events">No featured events scheduled for this month.</p>';
+          return;
+        }
+
+        // Sort events by date
+        events.sort((a, b) => a.date - b.date);
+
+        // Create event items
+        let html = "";
+        events.forEach((event) => {
+          const dateStr = `${monthNames[month]} ${event.date}, ${year}`;
+          html += `
+      <div class="event-item">
+        <span class="event-date">${dateStr}</span>
+        <span class="event-title">${event.title}</span>
+        <p class="event-desc">${event.desc}</p>
+      </div>
+    `;
+        });
+
+        eventsList.innerHTML = html;
+      }
+
+      function generateCalendar() {
+        try {
+          // Defensive clamp in case currentDate was modified elsewhere
+          clampCurrentDateTo2026();
+          const year = currentDate.getFullYear();
+          const month = currentDate.getMonth();
+
+          document.getElementById("currentMonth").textContent =
+            currentDate.toLocaleDateString("en-US", {
+              month: "long",
+              year: "numeric",
+            });
+
+          // Disable/enable navigation buttons based on month limits
+          const prevBtn = document.querySelectorAll(".calendar-nav")[0];
+          const nextBtn = document.querySelectorAll(".calendar-nav")[1];
+
+          // Disable previous button if at January 2026
+          prevBtn.disabled = year === 2026 && month === 0;
+
+          // Disable next button if at December 2026
+          nextBtn.disabled = year === 2026 && month === 11;
+
+          const firstDay = new Date(year, month, 1).getDay();
+          const daysInMonth = new Date(year, month + 1, 0).getDate();
+          const daysInPrevMonth = new Date(year, month, 0).getDate();
+
+          let html = "";
+          let dayCount = 0;
+
+          // Create weeks (6 rows max)
+          for (let week = 0; week < 6; week++) {
+            html += "<tr>";
+            for (let day = 0; day < 7; day++) {
+              const cellIndex = week * 7 + day;
+
+              if (cellIndex < firstDay) {
+                // Previous month days (interactive)
+                const dayNum = daysInPrevMonth - (firstDay - cellIndex - 1);
+                let pm = month - 1;
+                let py = year;
+                if (pm < 0) {
+                  pm = 11;
+                  py = year - 1;
+                }
+                const prevEvents = eventsDatabase[pm] || [];
+                const prevHas = prevEvents.filter(
+                  (ev) => ev.date === dayNum,
+                ).length;
+                const prevEventClass = prevHas ? " has-event" : "";
+                html += `<td class="other-month${prevEventClass}" tabindex="0" role="button" data-day="${dayNum}" data-month="${pm}" data-year="${py}" aria-label="${pm + 1}/${dayNum}/${py} - ${prevHas} events">`;
+                html += `<span class="day-number">${dayNum}</span>`;
+                if (prevHas)
+                  html += `<span class="event-dot" aria-hidden="true"></span>`;
+                html += `</td>`;
+              } else if (dayCount < daysInMonth) {
+                // Current month days
+                dayCount++;
+                const isToday =
+                  new Date().toDateString() ===
+                  new Date(year, month, dayCount).toDateString();
+                const todayClass = isToday ? " today" : "";
+
+                const eventsForMonth = eventsDatabase[month] || [];
+                const eventsOnThisDay = eventsForMonth.filter(
+                  (ev) => ev.date === dayCount,
+                );
+                const hasEventClass = eventsOnThisDay.length
+                  ? " has-event"
+                  : "";
+
+                html += `<td class="calendar-day${todayClass}${hasEventClass}" tabindex="0" role="button" data-day="${dayCount}" data-month="${month}" data-year="${year}" aria-label="${month + 1}/${dayCount}/${year} - ${eventsOnThisDay.length} events">`;
+                html += `<span class="day-number">${dayCount}</span>`;
+                if (eventsOnThisDay.length)
+                  html += `<span class="event-dot" aria-hidden="true"></span>`;
+                html += `</td>`;
+              } else {
+                // Next month days (interactive)
+                const dayNum = cellIndex - firstDay - daysInMonth + 1;
+                let nm = month + 1;
+                let ny = year;
+                if (nm > 11) {
+                  nm = 0;
+                  ny = year + 1;
+                }
+                const nextEvents = eventsDatabase[nm] || [];
+                const nextHas = nextEvents.filter(
+                  (ev) => ev.date === dayNum,
+                ).length;
+                const nextEventClass = nextHas ? " has-event" : "";
+                html += `<td class="other-month${nextEventClass}" tabindex="0" role="button" data-day="${dayNum}" data-month="${nm}" data-year="${ny}" aria-label="${nm + 1}/${dayNum}/${ny} - ${nextHas} events">`;
+                html += `<span class="day-number">${dayNum}</span>`;
+                if (nextHas)
+                  html += `<span class="event-dot" aria-hidden="true"></span>`;
+                html += `</td>`;
+              }
+            }
+            html += "</tr>";
+
+            if (dayCount === daysInMonth) break;
+          }
+
+          document.getElementById("calendarBody").innerHTML = html;
+
+          // Update events list for the current month
+          displayEventsForMonth(year, month);
+
+          // Attach handlers to clickable date cells
+          const calendarBody = document.getElementById("calendarBody");
+          calendarBody.querySelectorAll("td[data-day]").forEach((cell) => {
+            cell.addEventListener("click", (e) => {
+              const d = parseInt(cell.getAttribute("data-day"), 10);
+              const m = parseInt(cell.getAttribute("data-month"), 10);
+              const y = parseInt(cell.getAttribute("data-year"), 10);
+              showCalendarPopover(d, m, y, cell);
+            });
+            cell.addEventListener("keydown", (e) => {
+              if (e.key === "Enter" || e.key === " ") {
+                e.preventDefault();
+                const d = parseInt(cell.getAttribute("data-day"), 10);
+                const m = parseInt(cell.getAttribute("data-month"), 10);
+                const y = parseInt(cell.getAttribute("data-year"), 10);
+                showCalendarPopover(d, m, y, cell);
+              }
+            });
+          });
+        } catch (e) {
+          console.error("generateCalendar error", e);
+          try {
+            const bodyEl = document.getElementById("calendarBody");
+            if (bodyEl)
+              bodyEl.innerHTML =
+                '<tr><td colspan="7">Calendar unavailable</td></tr>';
+          } catch (err) {}
+        }
+      }
+
+      // Small anchored popover behavior
+      const calendarPopover = document.getElementById("calendarPopover");
+      let _lastFocusedCell = null;
+
+      function showCalendarPopover(day, month, year, cellEl) {
+        _lastFocusedCell = cellEl || document.activeElement;
+        const monthNames = [
+          "January",
+          "February",
+          "March",
+          "April",
+          "May",
+          "June",
+          "July",
+          "August",
+          "September",
+          "October",
+          "November",
+          "December",
+        ];
+        const date = new Date(year, month, day);
+        const weekday = date.toLocaleDateString("en-US", { weekday: "long" });
+        const eventsForMonth = eventsDatabase[month] || [];
+        const events = eventsForMonth.filter((ev) => ev.date === day);
+
+        let html = `
+    <div class="calendar-popover-card" role="dialog" aria-modal="true" aria-label="Date details for ${monthNames[month]} ${day}, ${year}">
+      <button class="popover-close" aria-label="Close">×</button>
+      <div class="popover-header"><div class="popover-date">${monthNames[month]} ${day}, ${year}</div><div class="popover-weekday">${weekday}</div></div>
+      <div class="popover-body">
+  `;
+
+        if (events.length === 0) {
+          html += `<p class="no-events">No featured events scheduled for this day.</p>`;
+        } else {
+          events.forEach((ev) => {
+            html += `<section class="popover-event"><h4 class="pe-title">${ev.title}</h4><p class="pe-desc">${ev.desc}</p></section>`;
+          });
+        }
+
+        html += `</div></div>`;
+
+        calendarPopover.innerHTML = html;
+        calendarPopover.setAttribute("aria-hidden", "false");
+        calendarPopover.style.display = "block";
+
+        // prevent horizontal scrolling while popover is open
+        try {
+          calendarPopover._prevOverflowX =
+            document.documentElement.style.overflowX || "";
+          document.documentElement.style.overflowX = "hidden";
+        } catch (e) {}
+
+        const pop = calendarPopover.querySelector(".calendar-popover-card");
+
+        // position the popover near the cell (use viewport coordinates)
+        requestAnimationFrame(() => {
+          const cellRect = cellEl.getBoundingClientRect();
+          const cardW = pop.offsetWidth;
+          const cardH = pop.offsetHeight;
+          let left = cellRect.left + cellRect.width / 2 - cardW / 2;
+          let top = cellRect.bottom + 8; // below cell
+
+          const padding = 8;
+          const vw = Math.max(
+            document.documentElement.clientWidth || 0,
+            window.innerWidth || 0,
+          );
+          const vh = Math.max(
+            document.documentElement.clientHeight || 0,
+            window.innerHeight || 0,
+          );
+
+          if (left < padding) left = padding;
+          if (left + cardW > vw - padding) left = vw - cardW - padding;
+          if (top + cardH > vh - padding) {
+            // place above
+            top = cellRect.top - cardH - 8;
+            if (top < padding) top = padding;
+          }
+
+          pop.style.position = "fixed";
+          pop.style.left = Math.round(left) + "px";
+          pop.style.top = Math.round(top) + "px";
+        });
+
+        // focus and close handlers
+        const closeBtn = calendarPopover.querySelector(".popover-close");
+        closeBtn.focus();
+
+        function onKey(e) {
+          if (e.key === "Escape") {
+            e.preventDefault();
+            closeCalendarPopover();
+          }
+        }
+        function onDocClick(e) {
+          if (!calendarPopover.contains(e.target) && !cellEl.contains(e.target))
+            closeCalendarPopover();
+        }
+
+        closeBtn.addEventListener("click", closeCalendarPopover);
+        document.addEventListener("keydown", onKey);
+        document.addEventListener("click", onDocClick, true);
+
+        calendarPopover._cleanup = () => {
+          document.removeEventListener("keydown", onKey);
+          document.removeEventListener("click", onDocClick, true);
+          closeBtn.removeEventListener("click", closeCalendarPopover);
+        };
+      }
+
+      function closeCalendarPopover() {
+        if (!calendarPopover) return;
+        calendarPopover.innerHTML = "";
+        calendarPopover.style.display = "none";
+        calendarPopover.setAttribute("aria-hidden", "true");
+        if (calendarPopover._cleanup) {
+          calendarPopover._cleanup();
+          calendarPopover._cleanup = null;
+        }
+        try {
+          if (calendarPopover._prevOverflowX !== undefined) {
+            document.documentElement.style.overflowX =
+              calendarPopover._prevOverflowX;
+            calendarPopover._prevOverflowX = undefined;
+          }
+        } catch (e) {}
+        if (_lastFocusedCell) {
+          try {
+            _lastFocusedCell.focus();
+          } catch (e) {}
+          _lastFocusedCell = null;
+        }
+      }
+
+      function nextMonth() {
+        // Limit to December 2026
+        if (
+          currentDate.getFullYear() === 2026 &&
+          currentDate.getMonth() === 11
+        ) {
+          return; // Already at December 2026
+        }
+        animateCalendarChange(() => {
+          currentDate.setMonth(currentDate.getMonth() + 1);
+          generateCalendar();
+        });
+      }
+
+      function previousMonth() {
+        // Limit to January 2026
+        if (
+          currentDate.getFullYear() === 2026 &&
+          currentDate.getMonth() === 0
+        ) {
+          return; // Already at January 2026
+        }
+        animateCalendarChange(() => {
+          currentDate.setMonth(currentDate.getMonth() - 1);
+          generateCalendar();
+        });
+      }
+
+      // Animate calendar month change: fade out, change content, then fade in
+      function animateCalendarChange(changeFn) {
+        const body = document.getElementById("calendarBody");
+        const eventsEl = document.getElementById("eventsList");
+        if (!body) {
+          changeFn();
+          return;
+        }
+
+        // Fade out calendar and events list (if present)
+        body.classList.add("calendar-fade-out");
+        if (eventsEl) eventsEl.classList.add("events-fade-out");
+
+        // Wait for the CSS transition to finish (fallback to timeout)
+        const onEnd = () => {
+          body.removeEventListener("transitionend", onEnd);
+          // perform change
+          changeFn();
+          // Defensive: clamp date range after change
+          try {
+            clampCurrentDateTo2026();
+          } catch (e) {}
+          // start fade-in
+          requestAnimationFrame(() => {
+            body.classList.remove("calendar-fade-out");
+            body.classList.add("calendar-fade-in");
+            if (eventsEl) {
+              eventsEl.classList.remove("events-fade-out");
+              eventsEl.classList.add("events-fade-in");
+            }
+            // remove fade-in after transition
+            setTimeout(() => {
+              body.classList.remove("calendar-fade-in");
+              if (eventsEl) eventsEl.classList.remove("events-fade-in");
+            }, 320);
+          });
+        };
+
+        // Use transitionend when available
+        body.addEventListener("transitionend", onEnd);
+        // fallback: if transitionend doesn't fire, use timeout
+        setTimeout(() => {
+          if (body.classList.contains("calendar-fade-out")) onEnd();
+        }, 340);
+      }
+
+      // Calendar initialized in consolidated initPage()
+
+      // Keyboard shortcuts: left/right arrows to change months (unless typing)
+      document.addEventListener("keydown", (e) => {
+        const active = document.activeElement;
+        const tag =
+          active && active.tagName ? active.tagName.toLowerCase() : null;
+        if (
+          tag === "input" ||
+          tag === "textarea" ||
+          (active && active.isContentEditable)
+        )
+          return;
+        if (e.key === "ArrowLeft") {
+          e.preventDefault();
+          previousMonth();
+        } else if (e.key === "ArrowRight") {
+          e.preventDefault();
+          nextMonth();
+        }
+      });
+    </script>
+
+    <!-- IntersectionObserver is initialized by initPage() -->
+  </body>
+</html>
+
+<script>
+  // Accessible background video toggle: toggles play/pause and updates ARIA state.
+  // Keeps autoplay intact; this control only pauses/resumes playback and updates the
+  // visible label and `aria-pressed` on the control for assistive tech.
+  (function () {
+    try {
+      const video = document.getElementById("bg-video");
+      const btn = document.getElementById("bg-video-toggle");
+      if (!video || !btn) return;
+
+      function updateButton(paused) {
+        btn.setAttribute("aria-pressed", String(!paused));
+        btn.textContent = paused ? "Play" : "Pause";
+        btn.setAttribute(
+          "aria-label",
+          paused ? "Play background video" : "Pause background video",
+        );
+      }
+
+      // Start with the current state
+      updateButton(video.paused);
+
+      btn.addEventListener("click", () => {
+        if (video.paused) {
+          video.play().catch(() => {});
+        } else {
+          video.pause();
+        }
+        updateButton(video.paused);
+      });
+
+      // Keyboard support: button is a native button and already keyboard-focusable.
+      video.addEventListener("play", () => updateButton(false));
+      video.addEventListener("pause", () => updateButton(true));
+    } catch (e) {
+      // silent fail safe
+      console.warn("Video toggle init failed", e);
+    }
+  })();
+</script>
