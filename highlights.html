@@ -549,31 +549,13 @@ if (savedTheme === 'light') {
   toggleBtn.textContent = 'Toggle Light Mode On';
 }
 
-// Theme toggle logic with a subtle overlay cross-fade
+// Theme toggle logic
 toggleBtn.addEventListener('click', () => {
-  const DURATION = 420;
-  const overlay = document.createElement('div');
-  overlay.className = 'theme-fade';
-  document.body.appendChild(overlay);
-  void overlay.offsetWidth;
-  overlay.classList.add('show');
-
-  document.documentElement.classList.add('theme-transition');
-
-  window.setTimeout(() => {
-    const isLight = root.classList.toggle('light-theme');
-    appStorage.setItem('theme', isLight ? 'light' : 'dark');
-    toggleBtn.textContent = isLight ? 'Toggle Dark Mode On' : 'Toggle Light Mode On';
-
-    // redraw theme-aware canvas immediately
-    try { requestAnimationFrame(()=>{ if (window.drawPopulationChart) window.drawPopulationChart(); }); } catch(e) {}
-  }, 40);
-
-  window.setTimeout(() => {
-    overlay.classList.remove('show');
-    document.documentElement.classList.remove('theme-transition');
-    window.setTimeout(() => { if (overlay && overlay.parentNode) overlay.parentNode.removeChild(overlay); }, 220);
-  }, DURATION + 40);
+  const isLight = root.classList.toggle('light-theme');
+  appStorage.setItem('theme', isLight ? 'light' : 'dark');
+  toggleBtn.textContent = isLight ? 'Toggle Dark Mode On' : 'Toggle Light Mode On';
+  // redraw theme-aware canvas immediately
+  try { requestAnimationFrame(()=>{ if (window.drawPopulationChart) window.drawPopulationChart(); }); } catch(e) {}
 });
 
 // =========================================================
