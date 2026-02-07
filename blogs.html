@@ -1,0 +1,870 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/png" href="assets/logo.png" />
+    <meta charset="UTF-8" />
+
+    <!-- Font Awesome icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- Responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Blogs, Frisco</title>
+  </head>
+
+  <body>
+    <!-- Page Loading Progress Bar -->
+    <div id="progressBar" class="progress-bar"></div>
+
+    <!-- Skip to main content -->
+    <a href="#main" class="skip-to-main">Skip to main content</a>
+
+    <!-- =========================================================
+       NAVIGATION BAR (SUB-HEADER)
+       ======================================================= -->
+    <section class="sub-header">
+      <nav>
+        <!-- Theme toggle button (light/dark mode) -->
+        <button id="theme-toggle" aria-label="Toggle light/dark mode"></button>
+
+        <!-- Logo linking to home -->
+        <a href="index.html">
+          <img src="assets/logo.png" class="logo" alt="Frisco-City-Logo" />
+        </a>
+
+        <!-- Navigation links (desktop + mobile) -->
+        <div class="nav-links" id="navLinks">
+          <div class="cross-icon" onclick="hideMenu()"></div>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="blogs.html" class="nav-active">Blogs</a></li>
+            <li><a href="highlights.html">Highlights</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="references.html">References</a></li>
+          </ul>
+        </div>
+
+        <!-- Hamburger icon (mobile) -->
+        <div class="menu-icon-unicode" onclick="showMenu()">&#9776;</div>
+      </nav>
+
+      <!-- =========================================================
+         BLOG BANNER
+         ======================================================= -->
+      <section class="blog-content">
+        <div class="banner4">
+          <img
+            src="assets/banner_4.jpg"
+            alt="Frisco community insights and updates"
+          />
+        </div>
+        <div class="banner-text">
+          <h1>Frisco Insights & Updates</h1>
+          <p>
+            Discover stories, events, and local voices that make our city
+            vibrant.
+          </p>
+        </div>
+      </section>
+
+      <main id="main">
+        <!-- =========================================================
+         LATEST BLOGS SECTION
+         ======================================================= -->
+        <section class="blogs-section">
+          <p class="section-mission">
+            These articles explore Frisco's development, infrastructure
+            projects, and community growth initiatives that directly impact
+            resident quality of life and neighborhood planning.
+          </p>
+          <h2 class="news">Latest Blogs</h2>
+          <p>
+            Explore insights on Frisco's infrastructure development, community
+            engagement, and residential growth.
+          </p>
+
+          <div class="blog-row">
+            <!-- Blog 1 -->
+            <div class="blog-card reveal reveal-bottom">
+              <h3>Infrastructure Development Shaping Frisco's Future</h3>
+              <p>
+                Frisco's expansion strategy prioritizes infrastructure that
+                balances growth with livability. Recent developments include
+                commercial centers, residential neighborhoods, and recreational
+                facilities designed to meet community needs.
+                <strong>Why this matters:</strong> Infrastructure projects
+                determine neighborhood character, property values, and service
+                availability for residents.
+              </p>
+              <a
+                href="https://www.thegrovefrisco.com/blog/posts-by-date/2025/january/8-exciting-new-things-coming-to-frisco/?utm_source=chatgpt.com"
+                class="blog-link"
+                >Read More →</a
+              >
+            </div>
+
+            <!-- Blog 2 -->
+            <div class="blog-card reveal reveal-bottom">
+              <h3>Community Engagement and Public Spaces</h3>
+              <p>
+                Effective community development requires intentional design of
+                shared spaces. Frisco's emphasis on pedestrian trails, parks,
+                and gathering areas reflects a planning philosophy that values
+                resident connection and civic engagement.
+                <strong>Why this matters:</strong> Well-designed public spaces
+                strengthen neighborhoods and foster civic participation
+                essential to community health.
+              </p>
+              <a
+                href="https://www.thegrovefrisco.com/blog/posts-by-date/2025/october/fall-at-the-grove-frisco/?utm_source=chatgpt.com"
+                class="blog-link"
+                >Read More →</a
+              >
+            </div>
+
+            <!-- Blog 3 -->
+            <div class="blog-card reveal reveal-bottom">
+              <h3>Residential Growth and Housing Availability</h3>
+              <p>
+                New residential construction directly responds to demographic
+                demand and shapes the community's future. Housing development
+                trends indicate neighborhood growth priorities and reveal
+                planning for amenities and services.
+                <strong>Why this matters:</strong> Understanding housing
+                developments helps residents anticipate changes and make
+                informed decisions about property and participation.
+              </p>
+              <a
+                href="https://www.thegrovefrisco.com/blog/posts-by-date/2025/july/community-connection-new-beginnings-at-the-grove-frisco/?utm_source=chatgpt.com"
+                class="blog-link"
+                >Read More →</a
+              >
+            </div>
+          </div>
+        </section>
+
+        <!-- =========================================================
+         BLOG GRADIENT BACKGROUND
+         ======================================================= -->
+        <section class="blog-gradient-bg"></section>
+
+        <!-- =========================================================
+         DATA TABLE SECTION
+         ======================================================= -->
+        <section class="blog-data">
+          <h2>Frisco Community Growth Snapshot</h2>
+          <caption>
+            Frisco community growth factors by category, year, and impact level
+          </caption>
+          <div class="table-wrapper">
+            <table id="blogTable">
+              <thead>
+                <tr>
+                  <th>Category</th>
+                  <th>Year</th>
+                  <th>Impact Level</th>
+                  <th>Community Effect</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Always-visible rows -->
+                <tr>
+                  <td>Population Growth</td>
+                  <td>2024</td>
+                  <td>High</td>
+                  <td>New housing demand &amp; schools</td>
+                </tr>
+                <tr>
+                  <td>Infrastructure</td>
+                  <td>2023</td>
+                  <td>Medium</td>
+                  <td>Expanded transport planning</td>
+                </tr>
+                <tr>
+                  <td>Technology</td>
+                  <td>2024</td>
+                  <td>High</td>
+                  <td>Job creation &amp; innovation</td>
+                </tr>
+                <tr>
+                  <td>Green Spaces</td>
+                  <td>2022</td>
+                  <td>Low</td>
+                  <td>Improved quality of life</td>
+                </tr>
+                <tr>
+                  <td>Public Safety</td>
+                  <td>2025</td>
+                  <td>High</td>
+                  <td>Police, fire, and EMS capacity</td>
+                </tr>
+                <tr>
+                  <td>Education</td>
+                  <td>2023</td>
+                  <td>Medium</td>
+                  <td>New school construction and programs</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- =========================================================
+         AUTO-MOVING LOGO SLIDER
+         ======================================================= -->
+        <div class="after-bannner">
+          <img src="assets/frisco-blog.jpeg" alt="" class="img-after" />
+        </div>
+        <div class="animation-container">
+          <div class="slider-blog-logos" style="--quantity: 10">
+            <div class="list-logos">
+              <!-- Logo items (duplicated for animation effect) -->
+              <div class="item-logos pop-container" style="--position: 1">
+                <img class="pop-image" src="assets/slider1.png" alt="Logos" />
+              </div>
+              <div class="item-logos pop-container" style="--position: 2">
+                <img class="pop-image" src="assets/slider2.png" alt="Logos" />
+              </div>
+              <div class="item-logos pop-container" style="--position: 3">
+                <img class="pop-image" src="assets/slider3.png" alt="Logos" />
+              </div>
+              <div class="item-logos pop-container" style="--position: 4">
+                <img class="pop-image" src="assets/slider4.png" alt="Logos" />
+              </div>
+              <div class="item-logos pop-container" style="--position: 5">
+                <img class="pop-image" src="assets/slider5.png" alt="Logos" />
+              </div>
+              <div class="item-logos pop-container" style="--position: 6">
+                <img class="pop-image" src="assets/slider6.png" alt="Logos" />
+              </div>
+              <div class="item-logos pop-container" style="--position: 7">
+                <img class="pop-image" src="assets/slider7.png" alt="Logos" />
+              </div>
+              <div class="item-logos pop-container" style="--position: 8">
+                <img class="pop-image" src="assets/slider8.png" alt="Logos" />
+              </div>
+              <div class="item-logos pop-container" style="--position: 9">
+                <img class="pop-image" src="assets/slider9.png" alt="Logos" />
+              </div>
+              <div class="item-logos pop-container" style="--position: 10">
+                <img class="pop-image" src="assets/slider10.png" alt="Logos" />
+              </div>
+              <!-- Duplicates for smooth animation -->
+              <div class="item-logos pop-container" style="--position: 1">
+                <img class="pop-image" src="assets/slider1.png" alt="Logos" />
+              </div>
+              <div class="item-logos pop-container" style="--position: 2">
+                <img class="pop-image" src="assets/slider2.png" alt="Logos" />
+              </div>
+              <div class="item-logos pop-container" style="--position: 3">
+                <img class="pop-image" src="assets/slider3.png" alt="Logos" />
+              </div>
+              <div class="item-logos pop-container" style="--position: 4">
+                <img class="pop-image" src="assets/slider4.png" alt="Logos" />
+              </div>
+              <div class="item-logos pop-container" style="--position: 5">
+                <img class="pop-image" src="assets/slider5.png" alt="Logos" />
+              </div>
+              <div class="item-logos pop-container" style="--position: 6">
+                <img class="pop-image" src="assets/slider6.png" alt="Logos" />
+              </div>
+              <div class="item-logos pop-container" style="--position: 7">
+                <img class="pop-image" src="assets/slider7.png" alt="Logos" />
+              </div>
+              <div class="item-logos pop-container" style="--position: 8">
+                <img class="pop-image" src="assets/slider8.png" alt="Logos" />
+              </div>
+              <div class="item-logos pop-container" style="--position: 9">
+                <img class="pop-image" src="assets/slider9.png" alt="Logos" />
+              </div>
+              <div class="item-logos pop-container" style="--position: 10">
+                <img class="pop-image" src="assets/slider10.png" alt="Logos" />
+              </div>
+              <!-- Duplicates for smooth animation -->
+              <div class="item-logos pop-container" style="--position: 1">
+                <img class="pop-image" src="assets/slider1.png" alt="Logos" />
+              </div>
+              <div class="item-logos pop-container" style="--position: 2">
+                <img class="pop-image" src="assets/slider2.png" alt="Logos" />
+              </div>
+              <div class="item-logos pop-container" style="--position: 3">
+                <img class="pop-image" src="assets/slider3.png" alt="Logos" />
+              </div>
+              <div class="item-logos pop-container" style="--position: 4">
+                <img class="pop-image" src="assets/slider4.png" alt="Logos" />
+              </div>
+              <div class="item-logos pop-container" style="--position: 5">
+                <img class="pop-image" src="assets/slider5.png" alt="Logos" />
+              </div>
+              <div class="item-logos pop-container" style="--position: 6">
+                <img class="pop-image" src="assets/slider6.png" alt="Logos" />
+              </div>
+              <div class="item-logos pop-container" style="--position: 7">
+                <img class="pop-image" src="assets/slider7.png" alt="Logos" />
+              </div>
+              <div class="item-logos pop-container" style="--position: 8">
+                <img class="pop-image" src="assets/slider8.png" alt="Logos" />
+              </div>
+              <div class="item-logos pop-container" style="--position: 9">
+                <img class="pop-image" src="assets/slider9.png" alt="Logos" />
+              </div>
+              <div class="item-logos pop-container" style="--position: 10">
+                <img class="pop-image" src="assets/slider10.png" alt="Logos" />
+              </div>
+              <!-- Duplicates for smooth animation -->
+              <div class="item-logos pop-container" style="--position: 1">
+                <img class="pop-image" src="assets/slider1.png" alt="Logos" />
+              </div>
+              <div class="item-logos pop-container" style="--position: 2">
+                <img class="pop-image" src="assets/slider2.png" alt="Logos" />
+              </div>
+              <div class="item-logos pop-container" style="--position: 3">
+                <img class="pop-image" src="assets/slider3.png" alt="Logos" />
+              </div>
+              <div class="item-logos pop-container" style="--position: 4">
+                <img class="pop-image" src="assets/slider4.png" alt="Logos" />
+              </div>
+              <div class="item-logos pop-container" style="--position: 5">
+                <img class="pop-image" src="assets/slider5.png" alt="Logos" />
+              </div>
+              <div class="item-logos pop-container" style="--position: 6">
+                <img class="pop-image" src="assets/slider6.png" alt="Logos" />
+              </div>
+              <div class="item-logos pop-container" style="--position: 7">
+                <img class="pop-image" src="assets/slider7.png" alt="Logos" />
+              </div>
+              <div class="item-logos pop-container" style="--position: 8">
+                <img class="pop-image" src="assets/slider8.png" alt="Logos" />
+              </div>
+              <div class="item-logos pop-container" style="--position: 9">
+                <img class="pop-image" src="assets/slider9.png" alt="Logos" />
+              </div>
+              <div class="item-logos pop-container" style="--position: 10">
+                <img class="pop-image" src="assets/slider10.png" alt="Logos" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- =========================================================
+         REVERSE AUTO-MOVING LOGO SLIDER
+         ======================================================= -->
+        <div class="animation-container">
+          <div
+            class="slider-blog-logos"
+            reverse="true"
+            style="--width: 280px; --height: 200px; --quantity: 9"
+          >
+            <div class="list-logos">
+              <!-- Place items (duplicated for animation effect) -->
+              <div class="item-logos2 pop-container" style="position: 1">
+                <img
+                  class="pop-image"
+                  src="assets/places1.png"
+                  alt="Places-In-Frisco"
+                />
+              </div>
+              <div class="item-logos2 pop-container" style="position: 1">
+                <img
+                  class="pop-image"
+                  src="assets/places2.png"
+                  alt="Places-In-Frisco"
+                />
+              </div>
+              <div class="item-logos2 pop-container" style="position: 1">
+                <img
+                  class="pop-image"
+                  src="assets/places3.png"
+                  alt="Places-In-Frisco"
+                />
+              </div>
+              <div class="item-logos2 pop-container" style="position: 1">
+                <img
+                  class="pop-image"
+                  src="assets/places4.png"
+                  alt="Places-In-Frisco"
+                />
+              </div>
+              <div class="item-logos2 pop-container" style="position: 1">
+                <img
+                  class="pop-image"
+                  src="assets/places5.png"
+                  alt="Places-In-Frisco"
+                />
+              </div>
+              <div class="item-logos2 pop-container" style="position: 1">
+                <img
+                  class="pop-image"
+                  src="assets/places6.png"
+                  alt="Places-In-Frisco"
+                />
+              </div>
+              <div class="item-logos2 pop-container" style="position: 1">
+                <img
+                  class="pop-image"
+                  src="assets/places7.png"
+                  alt="Places-In-Frisco"
+                />
+              </div>
+              <div class="item-logos2 pop-container" style="position: 1">
+                <img
+                  class="pop-image"
+                  src="assets/places8.png"
+                  alt="Places-In-Frisco"
+                />
+              </div>
+              <div class="item-logos2 pop-container" style="position: 1">
+                <img
+                  class="pop-image"
+                  src="assets/places9.png"
+                  alt="Places-In-Frisco"
+                />
+              </div>
+              <div class="item-logos2 pop-container" style="position: 1">
+                <img
+                  class="pop-image"
+                  src="assets/places10.png"
+                  alt="Places-In-Frisco"
+                />
+              </div>
+              <!-- Duplicates for smooth animation -->
+              <div class="item-logos2 pop-container" style="position: 1">
+                <img
+                  class="pop-image"
+                  src="assets/places1.png"
+                  alt="Places-In-Frisco"
+                />
+              </div>
+              <div class="item-logos2 pop-container" style="position: 1">
+                <img
+                  class="pop-image"
+                  src="assets/places2.png"
+                  alt="Places-In-Frisco"
+                />
+              </div>
+              <div class="item-logos2 pop-container" style="position: 1">
+                <img
+                  class="pop-image"
+                  src="assets/places3.png"
+                  alt="Places-In-Frisco"
+                />
+              </div>
+              <div class="item-logos2 pop-container" style="position: 1">
+                <img
+                  class="pop-image"
+                  src="assets/places4.png"
+                  alt="Places-In-Frisco"
+                />
+              </div>
+              <div class="item-logos2 pop-container" style="position: 1">
+                <img
+                  class="pop-image"
+                  src="assets/places5.png"
+                  alt="Places-In-Frisco"
+                />
+              </div>
+              <div class="item-logos2 pop-container" style="position: 1">
+                <img
+                  class="pop-image"
+                  src="assets/places6.png"
+                  alt="Places-In-Frisco"
+                />
+              </div>
+              <div class="item-logos2 pop-container" style="position: 1">
+                <img
+                  class="pop-image"
+                  src="assets/places7.png"
+                  alt="Places-In-Frisco"
+                />
+              </div>
+              <div class="item-logos2 pop-container" style="position: 1">
+                <img
+                  class="pop-image"
+                  src="assets/places8.png"
+                  alt="Places-In-Frisco"
+                />
+              </div>
+              <div class="item-logos2 pop-container" style="position: 1">
+                <img
+                  class="pop-image"
+                  src="assets/places9.png"
+                  alt="Places-In-Frisco"
+                />
+              </div>
+              <div class="item-logos2 pop-container" style="position: 1">
+                <img
+                  class="pop-image"
+                  src="assets/places10.png"
+                  alt="Places-In-Frisco"
+                />
+              </div>
+              <!-- Duplicates for smooth animation -->
+              <div class="item-logos2 pop-container" style="position: 1">
+                <img
+                  class="pop-image"
+                  src="assets/places1.png"
+                  alt="Place-In-Frisco"
+                />
+              </div>
+              <div class="item-logos2 pop-container" style="position: 1">
+                <img
+                  class="pop-image"
+                  src="assets/places2.png"
+                  alt="Place-In-Frisco"
+                />
+              </div>
+              <div class="item-logos2 pop-container" style="position: 1">
+                <img
+                  class="pop-image"
+                  src="assets/places3.png"
+                  alt="Place-In-Frisco"
+                />
+              </div>
+              <div class="item-logos2 pop-container" style="position: 1">
+                <img
+                  class="pop-image"
+                  src="assets/places4.png"
+                  alt="Place-In-Frisco"
+                />
+              </div>
+              <div class="item-logos2 pop-container" style="position: 1">
+                <img
+                  class="pop-image"
+                  src="assets/places5.png"
+                  alt="Place-In-Frisco"
+                />
+              </div>
+              <div class="item-logos2 pop-container" style="position: 1">
+                <img
+                  class="pop-image"
+                  src="assets/places6.png"
+                  alt="Place-In-Frisco"
+                />
+              </div>
+              <div class="item-logos2 pop-container" style="position: 1">
+                <img
+                  class="pop-image"
+                  src="assets/places7.png"
+                  alt="Place-In-Frisco"
+                />
+              </div>
+              <div class="item-logos2 pop-container" style="position: 1">
+                <img
+                  class="pop-image"
+                  src="assets/places8.png"
+                  alt="Place-In-Frisco"
+                />
+              </div>
+              <div class="item-logos2 pop-container" style="position: 1">
+                <img
+                  class="pop-image"
+                  src="assets/places9.png"
+                  alt="Place-In-Frisco"
+                />
+              </div>
+              <div class="item-logos2 pop-container" style="position: 1">
+                <img
+                  class="pop-image"
+                  src="assets/places10.png"
+                  alt="Place-In-Frisco"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <!-- =========================================================
+         FOOTER
+         ======================================================= -->
+      <section class="footer">
+        <footer>
+          <!-- Footer logo -->
+          <div class="logo">
+            <img src="assets/logo.png" alt="Frisco-City-Logo" />
+          </div>
+          <!-- Contact info -->
+          <h4>Contact Us</h4>
+          <div class="text-container">
+            <p>George A. Purefoy Municipal Center</p>
+            <p>6101 Frisco Square Boulevard</p>
+            <p>Frisco, Texas 75034</p>
+            <p>Phone: 972-292-5000</p>
+          </div>
+          <!-- Departments list -->
+          <h4 class="departments">Departments</h4>
+          <div class="text-container2 footer-dept-links">
+            <p>
+              <a
+                href="https://www.friscotexas.gov/506/City-Manager"
+                target="_blank"
+                >City Manager’s Office</a
+              >
+            </p>
+            <p>
+              <a href="https://www.friscoedc.com" target="_blank"
+                >Economic Development</a
+              >
+            </p>
+            <p>
+              <a href="https://www.friscotexas.gov/154/Fire" target="_blank"
+                >Frisco Fire</a
+              >
+            </p>
+            <p>
+              <a href="https://www.friscotexas.gov/100/Police" target="_blank"
+                >Frisco Police</a
+              >
+            </p>
+            <p>
+              <a
+                href="https://www.friscotexas.gov/167/Municipal-Court"
+                target="_blank"
+                >Municipal Court</a
+              >
+            </p>
+            <p>
+              <a href="https://www.playfrisco.org" target="_blank"
+                >Play Frisco</a
+              >
+            </p>
+            <p>
+              <a href="https://www.visitfrisco.com" target="_blank"
+                >Visit Frisco</a
+              >
+            </p>
+          </div>
+
+          <!-- Social media links -->
+          <div class="footer-column follow-column">
+            <h4 class="follow">Follow Us</h4>
+            <div class="text-container3">
+              <a
+                href="https://www.facebook.com/CityOfFriscoTX"
+                class="fa fa-facebook"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="City of Frisco Facebook"
+              ></a>
+              <a
+                href="https://www.instagram.com/cityoffriscotx/"
+                class="fa fa-instagram"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="City of Frisco Instagram"
+              ></a>
+              <a
+                href="https://www.youtube.com/user/cityoffriscotx"
+                class="fa fa-youtube"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="City of Frisco YouTube"
+              ></a>
+              <a
+                href="https://www.linkedin.com/company/city-of-frisco/"
+                class="fa fa-linkedin"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="City of Frisco LinkedIn"
+              ></a>
+            </div>
+          </div>
+        </footer>
+      </section>
+
+      <!-- =========================================================
+         JAVASCRIPT: NAVIGATION, THEME TOGGLE, TABLE SORTING
+         ======================================================= -->
+      <script>
+        // Open mobile navigation
+        function showMenu() {
+          const navLinks = document.getElementById("navLinks");
+          navLinks.style.right = "0";
+        }
+
+        // Close mobile navigation
+        function hideMenu() {
+          const navLinks = document.getElementById("navLinks");
+          navLinks.style.right = "-200px";
+        }
+
+        // Cookie-based storage: localStorage unavailable in Claude.ai artifact environment
+        const appStorage = {
+          getItem(key) {
+            const re = new RegExp(
+              "(?:^|; )" +
+                key.replace(/[.*+?^${}()|[\\]\\]/g, "\\$&") +
+                "=([^;]*)",
+            );
+            const match = document.cookie.match(re);
+            return match ? decodeURIComponent(match[1]) : null;
+          },
+          setItem(key, value, days = 365) {
+            const d = new Date();
+            d.setTime(d.getTime() + days * 24 * 60 * 60 * 1000);
+            document.cookie =
+              key +
+              "=" +
+              encodeURIComponent(String(value)) +
+              ";path=/;expires=" +
+              d.toUTCString();
+          },
+          removeItem(key) {
+            document.cookie =
+              key + "=;path=/;expires=Thu, 01 Jan 1970 00:00:00 GMT";
+          },
+        };
+
+        const toggleBtn = document.getElementById("theme-toggle");
+        const root = document.documentElement;
+
+        // Load saved theme (using appStorage instead of localStorage)
+        const savedTheme = appStorage.getItem("theme");
+
+        // If the saved theme is "light", enable light mode
+        if (savedTheme === "light") {
+          root.classList.add("light-theme");
+          toggleBtn.textContent = "Toggle Dark Mode On";
+        } else {
+          // Otherwise, force dark mode and save it as default
+          root.classList.remove("light-theme");
+          appStorage.setItem("theme", "dark");
+          toggleBtn.textContent = "Toggle Light Mode On";
+        }
+
+        // Theme toggle logic with a subtle overlay cross-fade
+        toggleBtn.addEventListener("click", () => {
+          const DURATION = 420;
+          const overlay = document.createElement('div');
+          overlay.className = 'theme-fade';
+          document.body.appendChild(overlay);
+          void overlay.offsetWidth;
+          overlay.classList.add('show');
+
+          document.documentElement.classList.add('theme-transition');
+
+          window.setTimeout(() => {
+            const isLight = root.classList.toggle('light-theme');
+            appStorage.setItem('theme', isLight ? 'light' : 'dark');
+            toggleBtn.textContent = isLight
+              ? 'Toggle Dark Mode On'
+              : 'Toggle Light Mode On';
+
+            if (typeof window.drawPopulationChart === 'function') {
+              try { window.drawPopulationChart(); } catch (e) {}
+            }
+          }, 40);
+
+          window.setTimeout(() => {
+            overlay.classList.remove('show');
+            document.documentElement.classList.remove('theme-transition');
+            window.setTimeout(() => { if (overlay && overlay.parentNode) overlay.parentNode.removeChild(overlay); }, 220);
+          }, DURATION + 40);
+        });
+
+        // =========================================================
+        // PAGE LOADING PROGRESS BAR
+        // =========================================================
+        const progressBar = document.getElementById("progressBar");
+
+        // Start progress bar when page starts loading
+        window.addEventListener("beforeunload", () => {
+          progressBar.classList.add("active");
+          progressBar.style.width = "30%";
+        });
+
+        // Complete progress bar when page finishes loading
+        window.addEventListener("load", () => {
+          progressBar.style.width = "100%";
+          progressBar.classList.remove("active");
+          progressBar.classList.add("complete");
+
+          // Fade out progress bar after completion
+          setTimeout(() => {
+            progressBar.classList.add("fade");
+          }, 1500);
+        });
+
+        // Initialize progress bar on page load
+        // Consolidated page init for blogs: progress bar + observers
+        function initPage() {
+          try {
+            progressBar.style.width = "60%";
+            progressBar.classList.add("active");
+          } catch (e) {}
+
+          // Intersection observer for reveals
+          try {
+            const observerOptions = {
+              root: null,
+              threshold: 0.05,
+              rootMargin: "0px 0px -20px 0px",
+            };
+            const observer = new IntersectionObserver((entries) => {
+              entries.forEach((entry) => {
+                if (entry.isIntersecting) entry.target.classList.add("active");
+              });
+            }, observerOptions);
+            document
+              .querySelectorAll(".reveal")
+              .forEach((el) => observer.observe(el));
+          } catch (e) {}
+        }
+
+        document.addEventListener("DOMContentLoaded", initPage);
+
+        // Handle link clicks to show progress
+        document.addEventListener("click", (e) => {
+          const link = e.target.closest("a");
+          if (link && link.href && !link.target && !link.href.startsWith("#")) {
+            progressBar.style.width = "30%";
+            progressBar.classList.add("active");
+            progressBar.classList.remove("complete", "fade");
+          }
+        });
+
+        /* Table sorting/filter helpers removed — filters were removed from the UI. */
+      </script>
+      <script>
+        document.addEventListener("DOMContentLoaded", () => {
+          const observerOptions = {
+            root: null,
+            threshold: 0.05, // Lower threshold = starts sooner
+            rootMargin: "0px 0px -20px 0px", // Offset to trigger slightly before visibility
+          };
+
+          const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("active");
+                // If you want it to re-animate every time you scroll back up,
+                // DO NOT use observer.unobserve(entry.target);
+              }
+            });
+          }, observerOptions);
+
+          // Select and observe all elements with the reveal class
+          document
+            .querySelectorAll(".reveal")
+            .forEach((el) => observer.observe(el));
+        });
+      </script>
+    </section>
+  </body>
+</html>
