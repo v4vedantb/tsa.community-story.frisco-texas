@@ -3371,7 +3371,15 @@ a:hover {
 }
 
 html.light-theme .calendar-popover-card {
-  background: #ffffff;
+  background: #ffffff !important;
+  color: #06102a !important;
+}
+
+html.light-theme .popover-date,
+html.light-theme .popover-weekday,
+html.light-theme .pe-title,
+html.light-theme .pe-desc {
+  color: #06102a !important;
 }
 
 .popover-close {
